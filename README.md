@@ -4,6 +4,7 @@ This shell script will compile binutils and gcc from source. This script builds 
 This script is mainly for people who want to build an OS for the x86_64 architecture, but don't have a cross compiler yet.
 
 Before you start, install these dependencies so the build doesn't fail:
+
 Arch:
 - base-devel
 - gmp
