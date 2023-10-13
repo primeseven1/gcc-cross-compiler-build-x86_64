@@ -2,6 +2,34 @@
 
 This shell script will compile binutils and gcc from source. This script builds gcc 13.1.0. If you need to change that, you can just replace every 13.1.0 with whatever version you want.
 This script is mainly for people who want to build an OS for the x86_64 architecture, but don't have a cross compiler yet.
+
+Before you start, install these dependencies so the build doesn't fail:
+Arch:
+- base-devel
+- gmp
+- libmpc
+- mpfr
+
+Debian/Ubuntu:
+- build-essential
+- bison
+- flex
+- libgmp3-dev
+- libmpc-dev
+- libmpfr-dev
+- texinfo
+
+Fedora:
+- gcc
+- gcc-c++
+- make
+- bison
+- flex
+- gmp-devel
+- libmpc-devel
+- mpfr-devel
+- texinfo
+
 Here is what the shell script does exactly:
 
 - Builds binutils and gcc
