@@ -3,7 +3,7 @@
 GCC_VERSION="13.1.0"
 BINUTILS_VERSION="2.40"
 
-PREFIX="$HOME/.toolchains/gcc/x86_64-elf-testing"
+PREFIX="$HOME/.toolchains/gcc/x86_64-elf"
 TARGET="x86_64-elf"
 export PATH="$PREFIX/bin:$PATH"
 
