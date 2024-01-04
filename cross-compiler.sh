@@ -7,7 +7,8 @@ PREFIX="$HOME/.toolchains/gcc/x86_64-elf"
 TARGET="x86_64-elf"
 export PATH="$PREFIX/bin:$PATH"
 
-MAKE_J_FLAG="-j8"
+# Change this to however many cores you have (eg. -j8 for 8 cores, -j2 for 2 cores, etc)
+MAKE_J_FLAG="-j 8"
 
 mkdir -p $PREFIX
 
@@ -48,4 +49,4 @@ make install-target-libgcc $MAKE_J_FLAG
 # Just in case something goes wrong here, you can restore it from the backup
 cp ~/.bashrc ~/.bashrc.backup
 echo "Created backup ~/.bashrc at ~/.bashrc.backup"
-echo -e "\nexport PATH=\"\$HOME/.toolchains/gcc/x86_64-elf/bin:\$PATH\"" >> ~/.bashrc
+echo -e "\nexport PATH=\"$PREFIX/bin:\$PATH\"" >> ~/.bashrc
